@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const ToggleButton = ({ initialState = false, labelOn, labelOff, colorOn = "bg-purple-500", colorOff = "bg-gray-300" }) => {
+const ToggleButton = ({ initialState = false,labelOn="on", labelOff="off", colorOn = "bg-purple-500", colorOff = "bg-gray-300" }) => {
   const [isToggled, setIsToggled] = useState(initialState);
 
   const handleToggle = () => {
