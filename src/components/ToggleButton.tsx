@@ -1,14 +1,11 @@
 import React, { useState } from "react";
-import { useTheme } from "../provider/ThemeProvider";
 
 const ToggleButton = ({ initialState = false, labelOn, labelOff, colorOn = "bg-purple-500", colorOff = "bg-gray-300" }) => {
   const [isToggled, setIsToggled] = useState(initialState);
-  const { toggleTheme } = useTheme();
 
   const handleToggle = () => {
     const newState = !isToggled;
     setIsToggled(newState);
-    toggleTheme();
   };
 
   return (
