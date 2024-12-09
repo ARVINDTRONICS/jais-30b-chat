@@ -1,14 +1,13 @@
 "use client";
 import React from "react";
 import { useState } from "react";
-import Link from "next/link";
-import { IoHome } from "react-icons/io5";
+
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(true);
 
-  const toggleSidebar = () => {
-    setIsOpen(!isOpen);
-  };
+  // const toggleSidebar = () => {
+  //   setIsOpen(!isOpen);
+  // };
 
   return (
     <div className="flex h-screen">

@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { useState } from "react";
-import ToggleButton from "./ToggleButton";
+import React from "react";
 
 
 const Header = () => {
